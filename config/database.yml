@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: wictionary_development
+  host: localhost
+
+test:
+  adapter: postgresql
+  database: wictionary_test
+  host: localhost
