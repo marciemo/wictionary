@@ -1,6 +1,5 @@
 Wictionary::Application.routes.draw do
-  match 'words' => 'words#create', :via => :post
-  match 'definitions' => 'definitions#create', :via => :post
+  resources :words
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

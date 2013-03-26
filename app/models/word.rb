@@ -1,4 +1,4 @@
 class Word < ActiveRecord::Base
-  validates :entry, :presence => true
-  has_many :definitions
+  attr_accessible :entry, :definition
+  validates :entry, :definition, :presence => true
 end

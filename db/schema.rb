@@ -11,20 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130325194548) do
-
-  create_table "definitions", :force => true do |t|
-    t.string   "text"
-    t.string   "part_of_speech"
-    t.integer  "word_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
+ActiveRecord::Schema.define(:version => 20130326164051) do
 
   create_table "words", :force => true do |t|
     t.string   "entry"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "definition"
   end
 
 end
